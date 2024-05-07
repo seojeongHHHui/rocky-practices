@@ -27,12 +27,12 @@
 
 5. configure compile & build Environment
 ```sh   
-# ./configure --prefix=/usr/local/poscodx/git
+# ./configure --prefix=/usr/local/poscodx/git-2.45.0
 ```
 
 6. 빌드
 ```sh
-# make all
+# make
 ```
    
 7. 설치
@@ -40,13 +40,20 @@
 # make install
 ```
 
-8. 설정(/etc/profile)
+8. 링크
+```sh
+# cd /usr/local/poscodx   
+# ln -s git-2.45.0 git
+```
+
+9. 설정(/etc/profile)
 ```sh
 export PATH=$PATH:/usr/local/poscodx/git/bin
 ```
 
-9. 확인
+10. 확인
 ```sh   
+# source /etc/profile 
 # git --version
 ```
 <!--stackedit_data:
