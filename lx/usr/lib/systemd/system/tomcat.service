@@ -1,12 +1,11 @@
 [Unit]
 Description=tomcat9
-After=network.target syslog.target
+After=network.target
+After=syslog.target
 
 [Service]
 Type=forking
-
 Environment=JAVA_HOME=/usr/local/poscodx/java
-
 User=root
 Group=root
 
